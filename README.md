@@ -5,7 +5,7 @@ Team Members:
 Abhinav Batra
 Zeineb Ben Mami
 Stirling Smith
-Simren Matharoo
+Simren Matharoo (simrenmatharoo)
 Laila Alhalabi
 Matthew Williams
 Hristo Marinov
