@@ -8,7 +8,7 @@ Eyad Al Sweidan *(eyadsw)*
 
 Laila Alhalabi
 
-Zeineb Ben Mami
+Zeineb Ben Mami *(Zeinebbenmami)*
 
 Hristo Marinov
 
