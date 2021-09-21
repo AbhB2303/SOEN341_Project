@@ -1,12 +1,19 @@
 # SOEN341_Project
 
 
-Team Members: 
+## Team Members: 
 Abhinav Batra
+
 Zeineb Ben Mami
+
 Stirling Smith
-Simren Matharoo (simrenmatharoo)
+
+Simren Matharoo *(simrenmatharoo)*
+
 Laila Alhalabi
+
 Matthew Williams
+
 Hristo Marinov
-Eyad Al Sweidan (eyadsw)
+
+Eyad Al Sweidan *(eyadsw)*
