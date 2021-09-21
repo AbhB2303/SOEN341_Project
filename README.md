@@ -2,18 +2,18 @@
 
 
 ## Team Members: 
-Abhinav Batra
+Abhinav Batra *(AbhB2303)*
 
-Zeineb Ben Mami
-
-Stirling Smith
-
-Simren Matharoo *(simrenmatharoo)*
+Eyad Al Sweidan *(eyadsw)*
 
 Laila Alhalabi
 
-Matthew Williams
+Zeineb Ben Mami
 
 Hristo Marinov
 
-Eyad Al Sweidan *(eyadsw)*
+Simren Matharoo *(simrenmatharoo)*
+
+Stirling Smith
+
+Matthew Williams
