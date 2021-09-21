@@ -9,4 +9,4 @@ Simren Matharoo
 Laila Alhalabi
 Matthew Williams
 Hristo Marinov
-Eyad Al Sweidan
+Eyad Al Sweidan (eyadsw)
