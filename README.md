@@ -6,7 +6,7 @@ Abhinav Batra *(AbhB2303)*
 
 Eyad Al Sweidan *(eyadsw)*
 
-Laila Alhalabi
+Laila Alhalabi *(lailaalhalabi)*
 
 Zeineb Ben Mami *(Zeinebbenmami)*
 
