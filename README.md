@@ -14,6 +14,6 @@ Hristo Marinov
 
 Simren Matharoo *(simrenmatharoo)*
 
-Stirling Smith  *(Stirl2608)
+Stirling Smith  *(Stirl2608)*
 
 Matthew Williams
