@@ -10,6 +10,7 @@ and replied to by other users. Each answer is voted on by the users and the user
 the question can choose their favourite answer to be displayed at the top.
 
 ## Core Features:
+* Prompting the user to create an account and login 
 * Posting questions on the forum and replying to those questions
 * Voting on replies to a question posted on the forum
 * Selecting the best answer to be displayed at the top
