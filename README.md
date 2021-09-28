@@ -2,14 +2,11 @@
 
 ## Objective:
 To create a website forum platform that is similar to Stack Overflow where users can 
-
 ask and answer questions.
 
 ## Description:
 This project will be an online forum where users can submit questions to be viewed, voted on
-
 and replied to by other users. Each answer is voted on by the users and the user who posted
-
 the question can choose their favourite answer to be displayed at the top.
 
 ## Core Features:
