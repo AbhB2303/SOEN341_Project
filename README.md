@@ -10,7 +10,7 @@ Laila Alhalabi *(lailaalhalabi)*
 
 Zeineb Ben Mami *(Zeinebbenmami)*
 
-Hristo Marinov
+Hristo Marinov *(hmarinov10)*
 
 Simren Matharoo *(simrenmatharoo)*
 
