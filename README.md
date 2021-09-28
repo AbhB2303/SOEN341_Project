@@ -17,3 +17,9 @@ Simren Matharoo *(simrenmatharoo)*
 Stirling Smith  *(Stirl2608)*
 
 Matthew Williams *(matthew-williams1)*
+
+
+## Languages and Techniques:
+Web Development: Spring framework *Java*
+Front-End Framework: React *JavaScript*
+Database: MySQL *SQL*
