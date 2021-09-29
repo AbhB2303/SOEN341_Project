@@ -25,7 +25,7 @@ Database: MySQL *SQL*
 ## Team Members: 
 Abhinav Batra *(AbhB2303)*
 
-Eyad Al Sweidan *(eyadsw)*
+Eyad Al-Sweidan *(eyadsw)*
 
 Laila Alhalabi *(lailaalhalabi)*
 
