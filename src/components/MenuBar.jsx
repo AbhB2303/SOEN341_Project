@@ -24,4 +24,4 @@ class MenuBar extends Component {
     }
 }
 
-export default HeaderComponent;
+export default MenuBar;
