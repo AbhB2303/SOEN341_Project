@@ -11,3 +11,37 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+div.box {
+  background-color: rgba(206, 226, 226, 0.6);
+  border-radius: 20px;
+  height: 340px;
+}
+div.h3 {
+  position: center;
+}
+.title {
+  width: 600px;
+  height: 30px;
+  border-radius: 15px;
+}
+.question {
+  top : 0px;
+  width: 600px;
+  padding-bottom: 150px;
+  border-radius: 15px;
+}
+.submit {
+  width: 80px;
+  height: 30px;
+  border-radius: 15px;
+}
+div.form {
+  position: center;
+  font-size: larger;
+}
+div.home {
+  position: center;
+  width: 100%;
+  bottom: 0px;
+}
