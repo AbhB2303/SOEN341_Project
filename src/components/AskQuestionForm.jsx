@@ -17,6 +17,7 @@ class AskQuestionForm extends Component {
                         name="q_text" id="q_text" required></input>
                     <br /><br />
                     <input className="submit" type="submit" value="Submit" onClick={this.submittionAlert} />
+                    <button className="reset" type="reset">Reset</button>
                     <br />
                 </form>
             </div>
