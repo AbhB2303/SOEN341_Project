@@ -3,6 +3,9 @@ class AskQuestionForm extends Component {
     submittionAlert() {
         alert('Your question was posted successfully!');
     }
+    	cancellationAlert() {
+        alert('Your question was cancelled successfully!');
+    }
     render() {
         return (
             <div className="box">
@@ -17,6 +20,8 @@ class AskQuestionForm extends Component {
                         name="q_text" id="q_text" required></input>
                     <br /><br />
                     <input className="submit" type="submit" value="Submit" onClick={this.submittionAlert} />
+                    <br />
+         	     	<input className="submit" type="submit" value="Cancel" onClick={this.cancellationAlert} />
                     <br />
                 </form>
             </div>
