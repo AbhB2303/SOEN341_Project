@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import AskQuestionForm from './Components/AskQuestionForm'
+import AskQuestionForm from './components/AskQuestionForm'
 class App extends Component {
   render() {
     return (
