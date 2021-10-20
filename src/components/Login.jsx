@@ -13,7 +13,7 @@ class Login extends Component {
                 <input className= "password" type="password" placeholder="Enter your password"
                     name="password" id="password" required></input>
                 <br /><br />
-                <input className="submit" type="submit" value="Submit" onClick={this.submittionAlert} />
+                <input className="submit" type="submit" value="Submit" />
                 <br />
                 <p><strong>Forgot your password?</strong>  <a href="#"> click here!</a> </p>
             </form>
