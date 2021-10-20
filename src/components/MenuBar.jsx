@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class HeaderComponent extends Component {
+class MenuBar extends Component {
     render() {
         return (
             <header>
