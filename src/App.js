@@ -18,6 +18,8 @@ function App() {
           Learn React
         </a>
       </header>
+ 
+      <AskQuestionForm></AskQuestionForm>
     </div>
   );
 }
