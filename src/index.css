@@ -31,6 +31,11 @@ div.h2 {
   padding-bottom: 150px;
   border-radius: 15px;
 }
+.reset {
+  width: 80px;
+  height: 30px;
+  border-radius: 15px;
+}
 .submit {
   width: 80px;
   height: 30px;
