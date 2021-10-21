@@ -17,7 +17,7 @@ div.box {
   border-radius: 20px;
   height: 340px;
 }
-div.h3 {
+div.h2 {
   position: center;
 }
 .title {
@@ -31,6 +31,11 @@ div.h3 {
   padding-bottom: 150px;
   border-radius: 15px;
 }
+.reset {
+  width: 80px;
+  height: 30px;
+  border-radius: 15px;
+}
 .submit {
   width: 80px;
   height: 30px;
@@ -40,8 +45,78 @@ div.form {
   position: center;
   font-size: larger;
 }
-div.home {
-  position: center;
-  width: 100%;
-  bottom: 0px;
+div.Login {
+  margin-top:60px;
+  position: absolute;
+  left: 0%;
+  top: 2%;
+  padding: 20px;
+  width: 90%;
+  height: 70%;
+  background-color: rgba(206, 226, 226, 0.6);
+  border-radius: 10px;
+  text-align: center;
+  font-family:serif;
+}
+div.h3 {
+  position: absolute;
+  height: 25%;
+  width: 90%;
+}
+div.LoginForm {
+  position: absolute;
+  top: 30%;
+  height: 40%;
+  width: 90%;
+  font-size: larger;
+}
+.email {
+  margin-top: 100px;
+  width: 200px;
+  height: 30px;
+  border-radius: 15px;
+}
+.password {
+  top : 0px;
+  width: 200px;
+  height: 30px;
+  border-radius: 15px;
+}
+a:link {
+  color:rgb(49, 53, 54);
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(132, 124, 124);
+  text-decoration: none;
+  padding: 4px 10px;
+  border-radius: 5px;
+}
+@media only screen and (min-width: 600px) {
+  div.LoginForm {
+      margin-top: 200px;
+      height: 60%;
+  }
+  div.Login {
+      width: 500px;
+      height: 500px;
+  }
+}
+@media only screen and (min-width: 500px) {
+  div.Login {
+      position: absolute;
+      left: 3%;
+      top: 15%;
+      width: 475px;
+      height: 300px;
+      border-radius: 10px;
+      text-align: center;
+  }
+  div.LoginForm {
+      position: absolute;
+      top: 25%;
+      height: 70%;
+      width: 90%;
+      font-size: larger;
+  }
 }

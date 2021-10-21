@@ -9,7 +9,7 @@ class AskQuestionForm extends Component {
     render() {
         return (
             <div className="box">
-                <div className="h3">
+                <div className="h2">
                     <h3>Post a New Question!</h3>
                 </div>
                 <form className="form">
