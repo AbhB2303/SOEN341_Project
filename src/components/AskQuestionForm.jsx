@@ -9,7 +9,7 @@ class AskQuestionForm extends Component {
     render() {
         return (
             <div className="box">
-                <div className="h2">
+                <div className="h3">
                     <h3>Post a New Question!</h3>
                 </div>
                 <form className="form">
@@ -24,6 +24,11 @@ class AskQuestionForm extends Component {
                     <br />
          	     	<input className="submit" type="submit" value="Cancel" onClick={this.cancellationAlert} />
                     <br />
+                </form>
+                <form action="/action_page.php">
+                    <label for="img">Select image:</label>
+                    <input type="file" id="img" name="img" accept="image/*" />
+                    <input type="submit" />
                 </form>
             </div>
         )
