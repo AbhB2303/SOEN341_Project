@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import Header from './components/Header'
-import AskQuestionForm from './components/AskQuestionForm'
-import ListQuestions from './components/ListQuestions'
-import Footer from './components/Footer';
+import Header from './Components/Header'
+import ListQuestions from './Components/MenuBar'
+import AskQuestionForm from './Components/AskQuestionForm'
+import ListQuestions from './Components/ListQuestions'
+import Footer from './Components/Footer';
 class App extends Component {
   render() {
     return (
@@ -12,6 +13,7 @@ class App extends Component {
         <Router>
           <Header></Header>
           <div className="container">
+            <NavBar></NavBar>
             <AskQuestionForm></AskQuestionForm>
             <Switch> http://localhost:3000/add-question
               <Route path="/" component={ListQuestions}></Route>

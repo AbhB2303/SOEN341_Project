@@ -28,6 +28,9 @@ class AskQuestionForm extends Component {
         QuestionsServices.createQuestion(question);
         window.location.reload();
     }
+    	cancellationAlert() {
+            window.location.reload();
+    }
     render() {
         return (
             <div className="box">
@@ -48,10 +51,15 @@ class AskQuestionForm extends Component {
                         value={this.state.q_text}
                         onChange={this.changeTextHandler} 
                         required></input>
-                    <br /><br />
+                    <form action="/action_page.php">
+                    <label for="img">Select image:</label>
+                    <input type="file" id="img" name="img" accept="image/*" />
+                    <input className="submit" type="submit" value="Upload"/>
+                    </form>
+                    <br />
                     <input className="submit" type="submit" value="Submit" 
                     disabled={this.state.q_text.length<1 || this.state.q_title.length<1} onClick={this.saveQuestion}/>
-                    <button className="reset" type="reset">Reset</button>
+         	     	<input className="submit" type="submit" value="Cancel" onClick={this.cancellationAlert} />
                     <br />
                 </form>
             </div>
