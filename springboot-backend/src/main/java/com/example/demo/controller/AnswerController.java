@@ -1,4 +1,4 @@
-package soen341project.controller;
+package com.example.demo.controller;
 
 import java.util.List;
 
@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import soen341project.model.Answer;
-import soen341project.repository.AnswerRepository;
+import com.example.demo.model.Answer;
+import com.example.demo.repository.AnswerRepository;
 
 
 @RestController
@@ -20,7 +20,7 @@ public class AnswerController {
 	
 	//get all Replies
 	@GetMapping("/answers")
-	public List<Answer> getAllQuestions(){
+	public List<Answer> getAllAnswers(){
 		return answerRepository.findAll();
 	}
 }
