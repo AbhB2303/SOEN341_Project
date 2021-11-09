@@ -1,13 +1,29 @@
 import React, { Component } from 'react';
 import './App.css';
-import AskQuestionForm from './components/AskQuestionForm'
-import MenuBar from './components/MenuBar'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import Header from './Components/Header'
+import ListQuestions from './Components/MenuBar'
+import AskQuestionForm from './Components/AskQuestionForm'
+import ListQuestions from './Components/ListQuestions'
+import Footer from './Components/Footer';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <MenuBar></MenuBar>
-        <AskQuestionForm></AskQuestionForm>
+      <div>
+        <Router>
+          <Header></Header>
+          <div className="container">
+            <NavBar></NavBar>
+            <AskQuestionForm></AskQuestionForm>
+            <Switch> http://localhost:3000/add-question
+              <Route path="/" component={ListQuestions}></Route>
+              <Route path="/questions" component={ListQuestions}></Route>
+              <Route path="/add-question" component={AskQuestionForm}></Route>
+              <ListQuestions></ListQuestions>
+            </Switch>
+          </div>
+          <Footer></Footer>
+        </Router>
       </div>
     )
   }

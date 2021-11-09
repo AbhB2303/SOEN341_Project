@@ -6,19 +6,25 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
+.header {
+  text-align: left;
+  margin-left: 20px;
+}
 div.box {
+  margin-top:20px;
   background-color: rgba(206, 226, 226, 0.6);
+  border-color: black;
   border-radius: 20px;
   height: 340px;
+  margin-bottom:60px;
 }
-div.h2 {
-  position: center;
+.h2 {
+  color: rgb(98, 94, 94);
+  text-align: center;
 }
 .title {
   width: 600px;
@@ -31,19 +37,30 @@ div.h2 {
   padding-bottom: 150px;
   border-radius: 15px;
 }
-.reset {
-  width: 80px;
-  height: 30px;
-  border-radius: 15px;
-}
 .submit {
   width: 80px;
   height: 30px;
   border-radius: 15px;
+  color: rgb(98, 94, 94);
+}
+.reset {
+  width: 80px;
+  height: 30px;
+  border-radius: 15px;
+  color: rgb(98, 94, 94);
+}
+.submit:hover {
+  background-color: rgb(197, 203, 201);
+  color: white;
+}
+.reset:hover {
+  background-color: rgb(197, 203, 201);
+  color: white;
 }
 div.form {
   position: center;
   font-size: larger;
+  border-color: black;
 }
 div.Login {
   margin-top:60px;
@@ -91,6 +108,44 @@ a:hover {
   text-decoration: none;
   padding: 4px 10px;
   border-radius: 5px;
+}
+th{
+  background-color: rgb(238, 245, 243);
+  position:relative;
+  width:700px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-decoration-style: double;
+}
+td {
+  position:relative;
+  width: 700px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+tr:hover {
+  background-color: rgb(183, 193, 189);
+}
+tr:nth-child(even) {
+  background-color: rgb(238, 245, 243);
+}
+tr:nth-child(even):hover {
+  background-color: rgb(183, 193, 189);
+}
+.Header {
+  background-color: rgb(113, 117, 115);
+  color: white;
+  text-align: center;
+}
+.Footer {
+  margin-top: 40px;
+  position: sticky;
+  bottom: 0;
+  width:100%;
+  height: 30px;
+  background-color: rgb(113, 117, 115);
+  color: white;
+  text-align: center;
 }
 @media only screen and (min-width: 600px) {
   div.LoginForm {
