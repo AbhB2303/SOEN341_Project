@@ -1,4 +1,4 @@
-package soen341project.model;
+package com.example.demo.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
