@@ -10,7 +10,7 @@ class Register extends Component {
                 <input className= "username" type="username" placeholder="Enter your username"
                     name="username" id="username" required></input>
                 <br /><br />
-                <input className= "email" type="email" placeholder="Enter your email"
+                <input className= "emailr" type="email" placeholder="Enter your email"
                     name="email" id="email" required></input>
                 <br /><br />
                 <input className= "password" type="password" placeholder="Enter your password"
