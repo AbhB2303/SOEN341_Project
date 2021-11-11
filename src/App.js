@@ -1,25 +1,22 @@
 import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import Header from './components/Header'
-import AskQuestionForm from './components/AskQuestionForm'
-import ListQuestions from './components/ListQuestions'
-import Footer from './components/Footer';
-import Navbar from './components/Navbar';
+import Login from './Components/Login'
+import Register from './Components/Register'
+import Index from './Components/Index'
+import Footer from './Components/Footer';
+import NavBar from './Components/NavBar';
 class App extends Component {
   render() {
     return (
       <div>
-      <Navbar/>
         <Router>
+        <NavBar></NavBar>
           <div className="container">
-            {/*<NavBar></NavBar>*/}
-            <AskQuestionForm></AskQuestionForm>
-            <Switch> http://localhost:3000/add-question
-              <Route path="/" component={ListQuestions}></Route>
-              <Route path="/questions" component={ListQuestions}></Route>
-              <Route path="/add-question" component={AskQuestionForm}></Route>
-              <ListQuestions></ListQuestions>
+            <Switch> http://localhost:3000
+              <Route path="/" exact component={Index}></Route>
+              <Route path="/login" component={Login}></Route>
+              <Route path="/register" component={Register}></Route>
             </Switch>
           </div>
           <Footer></Footer>
