@@ -5,12 +5,13 @@ import Header from './components/Header'
 import AskQuestionForm from './components/AskQuestionForm'
 import ListQuestions from './components/ListQuestions'
 import Footer from './components/Footer';
+import Navbar from './components/Navbar';
 class App extends Component {
   render() {
     return (
       <div>
+      <Navbar/>
         <Router>
-          <Header></Header>
           <div className="container">
             {/*<NavBar></NavBar>*/}
             <AskQuestionForm></AskQuestionForm>
