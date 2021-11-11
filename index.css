@@ -6,19 +6,25 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-div.box {
-  background-color: rgba(206, 226, 226, 0.6);
-  border-radius: 20px;
-  height: 340px;
+.header {
+  text-align: left;
+  margin-left: 20px;
 }
-div.h3 {
-  position: center;
+div.box {
+  margin-top:20px;
+  background-color: rgba(206, 226, 226, 0.6);
+  border-color: black;
+  border-radius: 20px;
+  height: 390px;
+  margin-bottom:60px;
+}
+.h2 {
+  color: rgb(98, 94, 94);
+  text-align: center;
 }
 .title {
   width: 600px;
@@ -35,22 +41,185 @@ div.h3 {
   width: 80px;
   height: 30px;
   border-radius: 15px;
+  color: rgb(98, 94, 94);
+}
+.reset {
+  width: 80px;
+  height: 30px;
+  border-radius: 15px;
+  color: rgb(98, 94, 94);
+}
+.submit:hover {
+  background-color: rgb(197, 203, 201);
+  color: white;
+}
+.reset:hover {
+  background-color: rgb(197, 203, 201);
+  color: white;
 }
 div.form {
   position: center;
   font-size: larger;
+  border-color: black;
 }
-div.home {
-  position: center;
-  width: 100%;
-  bottom: 0px;
+div.Login {
+  margin-top:60px;
+  position: absolute;
+  left: 0%;
+  top: 2%;
+  padding: 20px;
+  width: 90%;
+  height: 70%;
+  background-color: rgba(206, 226, 226, 0.6);
+  border-radius: 10px;
+  text-align: center;
+  font-family:serif;
 }
-.footer{
-  margin-top: 1rem; 
-  padding: 1rem; 
-  background-color: rgb(149,240,232);
-  position: fixed; 
+div.Register {
+  margin-top:60px;
+  position: absolute;
+  left: 0%;
+  top: 2%;
+  padding: 20px;
+  width: 90%;
+  height: 70%;
+  background-color: rgba(206, 226, 226, 0.6);
+  border-radius: 10px;
+  text-align: center;
+  font-family:serif;
+}
+div.h3 {
+  position: absolute;
+  height: 25%;
+  width: 90%;
+}
+div.LoginForm {
+  position: absolute;
+  top: 30%;
+  height: 40%;
+  width: 90%;
+  font-size: larger;
+}
+div.RegisterForm {
+  position: absolute;
+  top: 30%;
+  height: 60%;
+  width: 90%;
+  font-size: larger;
+}
+.username {
+  margin-top: 50px;
+  width: 200px;
+  height: 30px;
+  border-radius: 15px;
+}
+.email {
+  top : 0px;
+  width: 200px;
+  height: 30px;
+  border-radius: 15px;
+}
+.password {
+  top : 0px;
+  width: 200px;
+  height: 30px;
+  border-radius: 15px;
+}
+a:link {
+  color:rgb(49, 53, 54);
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(132, 124, 124);
+  text-decoration: none;
+  padding: 4px 10px;
+  border-radius: 5px;
+}
+th{
+  background-color: rgb(238, 245, 243);
+  position:relative;
+  width:700px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-decoration-style: double;
+}
+td {
+  position:relative;
+  width: 700px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+tr:hover {
+  background-color: rgb(183, 193, 189);
+}
+tr:nth-child(even) {
+  background-color: rgb(238, 245, 243);
+}
+tr:nth-child(even):hover {
+  background-color: rgb(183, 193, 189);
+}
+.qNavigation {
+  margin-bottom: 60px;
+}
+.Footer {
+  margin-top: 100px;
+  position:fixed;
   bottom: 0;
-  left: 0;
-  width: 100%;
+  width:100%;
+  height: 30px;
+  background-color: rgb(199, 206, 200);
+  color: black;
+  text-align: center;
+}
+@media only screen and (min-width: 600px) {
+  div.LoginForm {
+      margin-top: 200px;
+      height: 60%;
+  }
+  div.Login {
+      width: 500px;
+      height: 500px;
+  }
+  div.RegisterForm {
+      margin-top: 200px;
+      height: 60%;
+  }
+  div.Register {
+      width: 500px;
+      height: 500px;
+  }
+}
+@media only screen and (min-width: 500px) {
+  div.Login {
+      position: absolute;
+      left: 3%;
+      top: 15%;
+      width: 475px;
+      height: 300px;
+      border-radius: 10px;
+      text-align: center;
+  }
+  div.LoginForm {
+      position: absolute;
+      top: 25%;
+      height: 70%;
+      width: 90%;
+      font-size: larger;
+  }
+  div.Register {
+    position: absolute;
+    left: 3%;
+    top: 15%;
+    width: 475px;
+    height: 300px;
+    border-radius: 10px;
+    text-align: center;
+}
+div.RegisterForm {
+    position: absolute;
+    top: 25%;
+    height: 70%;
+    width: 90%;
+    font-size: larger;
+}
 }
