@@ -32,22 +32,25 @@ class Navbar extends Component {
                   <ReactBootstrap.Nav.Link href="/">
                     Home
                   </ReactBootstrap.Nav.Link>
-                  <ReactBootstrap.Nav.Link href="#action2">
-                    Link
+                  <ReactBootstrap.Nav.Link href="/login">
+                    Login
+                  </ReactBootstrap.Nav.Link>
+                  <ReactBootstrap.Nav.Link href="/register">
+                    Register
                   </ReactBootstrap.Nav.Link>
                   <ReactBootstrap.NavDropdown
                     title="Dropdown"
                     id="offcanvasNavbarDropdown"
                   >
                     <ReactBootstrap.NavDropdown.Item href="#action3">
-                      Action
+                      About Us
                     </ReactBootstrap.NavDropdown.Item>
                     <ReactBootstrap.NavDropdown.Item href="#action4">
-                      Another action
+                      Contact Us
                     </ReactBootstrap.NavDropdown.Item>
                     <ReactBootstrap.NavDropdown.Divider />
                     <ReactBootstrap.NavDropdown.Item href="#action5">
-                      Something else here
+                      Privacy and Security
                     </ReactBootstrap.NavDropdown.Item>
                   </ReactBootstrap.NavDropdown>
                 </ReactBootstrap.Nav>
