@@ -90,7 +90,7 @@ div.Register {
 }
 div.h3 {
   position: absolute;
-  height: 25%;
+  height: 30%;
   width: 90%;
 }
 div.LoginForm {
@@ -114,6 +114,13 @@ div.RegisterForm {
   border-radius: 15px;
 }
 .email {
+  margin-top: 50px;
+  top : 0px;
+  width: 200px;
+  height: 30px;
+  border-radius: 15px;
+}
+.emailr {
   top : 0px;
   width: 200px;
   height: 30px;
@@ -223,3 +230,4 @@ div.RegisterForm {
     font-size: larger;
 }
 }
+
