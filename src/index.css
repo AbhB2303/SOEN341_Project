@@ -19,7 +19,7 @@ div.box {
   background-color: rgba(206, 226, 226, 0.6);
   border-color: black;
   border-radius: 20px;
-   height: 390px;
+  height: 390px;
   margin-bottom:60px;
 }
 .h2 {
@@ -75,6 +75,19 @@ div.Login {
   text-align: center;
   font-family:serif;
 }
+div.Register {
+  margin-top:60px;
+  position: absolute;
+  left: 0%;
+  top: 2%;
+  padding: 20px;
+  width: 90%;
+  height: 70%;
+  background-color: rgba(206, 226, 226, 0.6);
+  border-radius: 10px;
+  text-align: center;
+  font-family:serif;
+}
 div.h3 {
   position: absolute;
   height: 25%;
@@ -87,8 +100,21 @@ div.LoginForm {
   width: 90%;
   font-size: larger;
 }
+div.RegisterForm {
+  position: absolute;
+  top: 30%;
+  height: 60%;
+  width: 90%;
+  font-size: larger;
+}
+.username {
+  margin-top: 50px;
+  width: 200px;
+  height: 30px;
+  border-radius: 15px;
+}
 .email {
-  margin-top: 100px;
+  top : 0px;
   width: 200px;
   height: 30px;
   border-radius: 15px;
@@ -132,19 +158,17 @@ tr:nth-child(even) {
 tr:nth-child(even):hover {
   background-color: rgb(183, 193, 189);
 }
-.Header {
-  background-color: rgb(113, 117, 115);
-  color: white;
-  text-align: center;
+.qNavigation {
+  margin-bottom: 60px;
 }
 .Footer {
-  margin-top: 40px;
-  position: sticky;
+  margin-top: 100px;
+  position:fixed;
   bottom: 0;
   width:100%;
   height: 30px;
-  background-color: rgb(113, 117, 115);
-  color: white;
+  background-color: rgb(199, 206, 200);
+  color: black;
   text-align: center;
 }
 @media only screen and (min-width: 600px) {
@@ -153,6 +177,14 @@ tr:nth-child(even):hover {
       height: 60%;
   }
   div.Login {
+      width: 500px;
+      height: 500px;
+  }
+  div.RegisterForm {
+      margin-top: 200px;
+      height: 60%;
+  }
+  div.Register {
       width: 500px;
       height: 500px;
   }
@@ -174,4 +206,20 @@ tr:nth-child(even):hover {
       width: 90%;
       font-size: larger;
   }
+  div.Register {
+    position: absolute;
+    left: 3%;
+    top: 15%;
+    width: 475px;
+    height: 300px;
+    border-radius: 10px;
+    text-align: center;
+}
+div.RegisterForm {
+    position: absolute;
+    top: 25%;
+    height: 70%;
+    width: 90%;
+    font-size: larger;
+}
 }
