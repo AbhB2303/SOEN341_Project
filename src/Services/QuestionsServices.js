@@ -8,5 +8,8 @@ class QuestionsServices {
     createQuestion(q){
         return axios.post(QUESTIONS_API_BASE_URL, q);
     }
+    getQuestionById(q_id){
+        return axios.get(QUESTIONS_API_BASE_URL + '/' + q_id);
+    }
 }
 export default new QuestionsServices();
