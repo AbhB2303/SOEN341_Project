@@ -39,7 +39,7 @@ class AskQuestionForm extends Component {
                 </div>
                 <form className="form" className="text-center">
                     <input className="title" type="text" 
-                    placeholder="Enter the title of your question"
+                        placeholder="Enter the title of your question"
                         name="q_title" id="q_title"
                         value={this.state.q_title} 
                         onChange={this.changeTitleHandler}
