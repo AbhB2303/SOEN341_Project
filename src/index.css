@@ -22,30 +22,6 @@ div.box {
   height: 390px;
   margin-bottom:60px;
 }
-div.ansbox {
-  margin-top:20px;
-  background-color: rgba(228, 231, 231, 0.6);
-  border-color: black;
-  border-radius: 40px;
-  height: 250px;
-  margin-bottom:60px;
-}
-.askedQuestionBox{
-  margin-top: 20px;
-  background-color: rgba(228, 231, 231, 0.6);
-  height: 150px;
-  border-radius: 20px;
-}
-.ans{
-  background-color: rgba(228, 231, 231, 0.6);
-  border-radius: 20px;
-}
-.ansBody{
-  font-size: 26px;
-}
-.ansRating{
-  margin-bottom: 50px;
-}
 .h2 {
   color: rgb(98, 94, 94);
   text-align: center;
@@ -59,12 +35,6 @@ div.ansbox {
   top : 0px;
   width: 600px;
   padding-bottom: 150px;
-  border-radius: 15px;
-}
-.answer {
-  top : 0px;
-  width: 800px;
-  padding-bottom: 80px;
   border-radius: 15px;
 }
 .submit {
@@ -84,18 +54,6 @@ div.ansbox {
   color: white;
 }
 .reset:hover {
-  background-color: rgb(197, 203, 201);
-  color: white;
-}
-.viewQLink{
-  background-color: rgb(197, 203, 201);
-  color: white;
-}
-.viewQLink:hover {
-  background-color: rgb(197, 203, 201);
-  color: white;
-}
-.viewQLink:visited {
   background-color: rgb(197, 203, 201);
   color: white;
 }
@@ -132,7 +90,7 @@ div.Register {
 }
 div.h3 {
   position: absolute;
-  height: 10%;
+  height: 30%;
   width: 90%;
 }
 div.LoginForm {
@@ -150,29 +108,28 @@ div.RegisterForm {
   font-size: larger;
 }
 .username {
-  top : 0px;
   margin-top: 50px;
-  width: 220px;
-  height: 40px;
+  width: 200px;
+  height: 30px;
   border-radius: 15px;
 }
 .email {
   margin-top: 50px;
   top : 0px;
-  width: 220px;
-  height: 40px;
+  width: 200px;
+  height: 30px;
   border-radius: 15px;
 }
 .emailr {
   top : 0px;
-  width: 220px;
-  height: 40px;
+  width: 200px;
+  height: 30px;
   border-radius: 15px;
 }
 .password {
   top : 0px;
-  width: 220px;
-  height: 40px;
+  width: 200px;
+  height: 30px;
   border-radius: 15px;
 }
 a:link {

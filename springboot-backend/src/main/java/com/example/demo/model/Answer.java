@@ -44,6 +44,8 @@ public class Answer {
 		this.isBestAnswer = isBestAnswer;
 		this.rating = rating;
 	}
+
+	
 	
 	//Getters and setters	
 	public long getReplyID() {
