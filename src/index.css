@@ -1,4 +1,5 @@
-body {
+body 
+{
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -6,15 +7,21 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-code {
+
+code 
+{
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.header {
+
+.header 
+{
   text-align: left;
   margin-left: 20px;
 }
-div.box {
+
+div.box 
+{
   margin-top:20px;
   background-color: rgba(206, 226, 226, 0.6);
   border-color: black;
@@ -22,7 +29,9 @@ div.box {
   height: 390px;
   margin-bottom:60px;
 }
-div.ansbox {
+
+div.ansbox 
+{
   margin-top:20px;
   background-color: rgba(228, 231, 231, 0.6);
   border-color: black;
@@ -30,38 +39,54 @@ div.ansbox {
   height: 250px;
   margin-bottom:60px;
 }
-.askedQuestionBox{
+
+.askedQuestionBox
+{
   margin-top: 20px;
   background-color: rgba(228, 231, 231, 0.6);
   height: 150px;
   border-radius: 20px;
 }
-.ans{
+
+.ans
+{
   background-color: rgba(228, 231, 231, 0.6);
   border-radius: 20px;
 }
-.ansBody{
+
+.ansBody
+{
   font-size: 26px;
 }
-.ansRating{
+
+.ansRating
+{
   margin-bottom: 50px;
 }
-.h2 {
+
+.h2 
+{
   color: rgb(98, 94, 94);
   text-align: center;
 }
-.title {
+
+.title 
+{
   width: 600px;
   height: 30px;
   border-radius: 15px;
 }
-.question {
+
+.question 
+{
   top : 0px;
   width: 600px;
   padding-bottom: 150px;
   border-radius: 15px;
 }
-.answer {
+
+.answer 
+{
   top : 0px;
   width: 800px;
   padding-bottom: 80px;
@@ -73,38 +98,53 @@ div.ansbox {
   border-radius: 15px;
   color: rgb(98, 94, 94);
 }
-.reset {
+
+.reset 
+{
   width: 80px;
   height: 30px;
   border-radius: 15px;
   color: rgb(98, 94, 94);
 }
-.submit:hover {
+
+.submit:hover 
+{
   background-color: rgb(197, 203, 201);
   color: white;
 }
-.reset:hover {
+
+.reset:hover 
+{
   background-color: rgb(197, 203, 201);
   color: white;
 }
-.viewQLink{
+
+.viewQLink
+{
   background-color: rgb(197, 203, 201);
   color: white;
 }
-.viewQLink:hover {
+
+.viewQLink:hover 
+{
   background-color: rgb(197, 203, 201);
   color: white;
 }
-.viewQLink:visited {
+.viewQLink : visited 
+{
   background-color: rgb(197, 203, 201);
   color: white;
 }
-div.form {
+
+div.form
+{
   position: center;
   font-size: larger;
   border-color: black;
 }
-div.Login {
+
+div.Login 
+{
   margin-top:60px;
   position: absolute;
   left: 0%;
@@ -117,7 +157,9 @@ div.Login {
   text-align: center;
   font-family:serif;
 }
-div.Register {
+
+div.Register 
+{
   margin-top:60px;
   position: absolute;
   left: 0%;
@@ -130,62 +172,82 @@ div.Register {
   text-align: center;
   font-family:serif;
 }
-div.h3 {
+
+div.h3 
+{
   position: absolute;
   height: 10%;
   width: 90%;
 }
-div.LoginForm {
+
+div.LoginForm 
+{
   position: absolute;
   top: 30%;
   height: 40%;
   width: 90%;
   font-size: larger;
 }
-div.RegisterForm {
+
+div.RegisterForm
+{
   position: absolute;
   top: 30%;
   height: 60%;
   width: 90%;
   font-size: larger;
 }
-.username {
+
+.username 
+{
   top : 0px;
   margin-top: 50px;
   width: 220px;
   height: 40px;
   border-radius: 15px;
 }
-.email {
+
+.email 
+{
   margin-top: 50px;
   top : 0px;
   width: 220px;
   height: 40px;
   border-radius: 15px;
 }
-.emailr {
+
+.emailr 
+{
+  top : 0px;
+  width : 220px;
+  height : 40px;
+  border-radius : 15px;
+}
+
+.password 
+{
   top : 0px;
   width: 220px;
   height: 40px;
   border-radius: 15px;
 }
-.password {
-  top : 0px;
-  width: 220px;
-  height: 40px;
-  border-radius: 15px;
-}
-a:link {
+
+a:link
+{
   color:rgb(49, 53, 54);
   text-decoration: none;
 }
-a:hover {
+
+a:hover 
+{
   color: rgb(132, 124, 124);
   text-decoration: none;
   padding: 4px 10px;
   border-radius: 5px;
 }
-th{
+
+th
+{
   background-color: rgb(238, 245, 243);
   position:relative;
   width:700px;
@@ -193,25 +255,37 @@ th{
   padding-bottom: 10px;
   text-decoration-style: double;
 }
-td {
+
+td 
+{
   position:relative;
   width: 700px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
-tr:hover {
+
+tr:hover 
+{
   background-color: rgb(183, 193, 189);
 }
-tr:nth-child(even) {
+
+tr:nth-child(even) 
+{
   background-color: rgb(238, 245, 243);
 }
-tr:nth-child(even):hover {
+
+tr:nth-child(even):hover 
+{
   background-color: rgb(183, 193, 189);
 }
-.qNavigation {
+
+.qNavigation 
+{
   margin-bottom: 60px;
 }
-.Footer {
+
+.Footer 
+{
   margin-top: 100px;
   position:fixed;
   bottom: 0;
@@ -221,26 +295,35 @@ tr:nth-child(even):hover {
   color: black;
   text-align: center;
 }
-@media only screen and (min-width: 600px) {
-  div.LoginForm {
+
+@media only screen and (min-width: 600px)
+{
+  div.LoginForm 
+  {
       margin-top: 200px;
       height: 60%;
   }
-  div.Login {
+  div.Login 
+  {
       width: 500px;
       height: 500px;
   }
-  div.RegisterForm {
+  div.RegisterForm 
+  {
       margin-top: 200px;
       height: 60%;
   }
-  div.Register {
+  div.Register 
+  {
       width: 500px;
       height: 500px;
   }
 }
-@media only screen and (min-width: 500px) {
-  div.Login {
+
+@media only screen and (min-width: 500px) 
+{
+  div.Login 
+  {
       position: absolute;
       left: 3%;
       top: 15%;
@@ -249,14 +332,16 @@ tr:nth-child(even):hover {
       border-radius: 10px;
       text-align: center;
   }
-  div.LoginForm {
+  div.LoginForm 
+  {
       position: absolute;
       top: 25%;
       height: 70%;
       width: 90%;
       font-size: larger;
   }
-  div.Register {
+  div.Register 
+  {
     position: absolute;
     left: 3%;
     top: 15%;
@@ -264,13 +349,14 @@ tr:nth-child(even):hover {
     height: 300px;
     border-radius: 10px;
     text-align: center;
-}
-div.RegisterForm {
+  }
+  div.RegisterForm 
+  {
     position: absolute;
     top: 25%;
     height: 70%;
     width: 90%;
     font-size: larger;
-}
+  }
 }
 
