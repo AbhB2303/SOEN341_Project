@@ -2,10 +2,14 @@ import React, { Component } from 'react';
 import QuestionsServices from '../Services/QuestionsServices';
 import AnswersServices from '../Services/AnswersServices';
 import { Platform, StyleSheet, View, Text } from 'react';
-class ViewQuestion extends Component {
-    constructor(props) {
+
+class ViewQuestion extends Component 
+{
+    constructor(props) 
+    {
         super(props)
-        this.state = {
+        this.state = 
+        {
             id: this.props.match.params.id,
             questionID: this.props.match.params.id,
             body: '',
@@ -15,7 +19,9 @@ class ViewQuestion extends Component {
         this.changeBodyHandler = this.changeBodyHandler.bind(this);
         this.saveAnswer = this.saveAnswer.bind(this);
     }
-    componentDidMount() {
+    
+    componentDidMount() 
+    {
         QuestionsServices.getQuestionById(this.state.id).then(
             (res) => {
                 this.setState({ question: res.data });
@@ -31,7 +37,8 @@ class ViewQuestion extends Component {
     saveAnswer = (a) => {
         alert('Your answer was posted successfully!');
         a.preventDefault();
-        let ans = {
+        let ans = 
+        {
             questionID: this.props.match.params.id,
             body: this.state.body
         }
@@ -39,10 +46,12 @@ class ViewQuestion extends Component {
         AnswersServices.createAnswer(ans);
         window.location.reload();
     }
-    cancellationAlert() {
+    cancellationAlert() 
+    {
         window.location.reload();
     }
-    render() {
+    render() 
+    {
         return (
             <div>
                 <div className="askedQuestionBox">
@@ -82,26 +91,26 @@ class ViewQuestion extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="ansbox">
-                    <div className="h2">
+                <div className ="ansbox">
+                    <div className ="h2">
                         <h2>Post your Answer! # {this.state.question.id}</h2>
                     </div>
-                    <form className="form" className="text-center">
-                        <input className="answer" type="text"
-                            placeholder="Enter your answer"
-                            name="ans" id="ans"
-                            value={this.state.body}
-                            onChange={this.changeBodyHandler}
+                    <form className ="form" className="text-center">
+                        <input className ="answer" type ="text"
+                            placeholder ="Enter your answer"
+                            name ="ans" id ="ans"
+                            value ={this.state.body}
+                            onChange ={this.changeBodyHandler}
                             required></input>
-                        <form action="/action_page.php">
-                            <label for="img">Select image:</label>
-                            <input type="file" id="img" name="img" accept="image/*" />
-                            <input className="submit" type="submit" value="Upload" />
+                        <form action ="/action_page.php">
+                            <label for ="img">Select image:</label>
+                            <input type ="file" id ="img" name ="img" accept ="image/*" />
+                            <input className ="submit" type ="submit" value ="Upload" />
                         </form>
                         <br />
-                        <input className="submit" type="submit" value="Submit"
-                            disabled={this.state.body.length < 1} onClick={this.saveAnswer} />
-                        <input className="submit" type="submit" value="Cancel" onClick={this.cancellationAlert} />
+                        <input className ="submit" type ="submit" value ="Submit"
+                            disabled ={this.state.body.length < 1} onClick ={this.saveAnswer} />
+                        <input className ="submit" type ="submit" value ="Cancel" onClick ={this.cancellationAlert} />
                         <br />
                     </form>
                 </div>
