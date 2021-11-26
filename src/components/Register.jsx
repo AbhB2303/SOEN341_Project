@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
 import UsersServices from '../Services/UsersServices';
-class Register extends Component {
-    constructor(props) {
+
+class Register extends Component 
+{
+    constructor(props) 
+    {
         super(props)
-        this.state = {
+        this.state = 
+        {
             username: '',
             email: '',
             password: ''
@@ -25,7 +29,8 @@ class Register extends Component {
     saveUser = (u) => {
         alert('User registered successfully!');
         u.preventDefault();
-        let user = {
+        let user =
+        {
             username: this.state.username,
             email: this.state.email,
             password: this.state.password,
@@ -34,34 +39,35 @@ class Register extends Component {
         UsersServices.createUser(user);
         window.location.reload();
     }
-    render() {
+    render() 
+    {
         return (
-            <div className="Register">
-            <div className="h3">
+            <div className ="Register">
+            <div className ="h3">
                 <h3>Register to Continue!</h3>
             </div>
-            <form className="RegisterForm">
-                <input className= "username" type="text" placeholder="Enter your username"
-                    name="username" id="username" 
-                    value={this.state.username} 
-                    onChange={this.changeUsernameHandler}
+            <form className ="RegisterForm">
+                <input className ="username" type ="text" placeholder ="Enter your username"
+                    name ="username" id ="username" 
+                    value ={this.state.username} 
+                    onChange ={this.changeUsernameHandler}
                     required/>
                 <br /><br />
-                <input className= "emailr" type="email" placeholder="Enter your email"
-                    name="email" id="email" 
-                    value={this.state.email} 
-                    onChange={this.changeEmailHandler}
+                <input className ="emailr" type ="email" placeholder ="Enter your email"
+                    name ="email" id ="email" 
+                    value ={this.state.email} 
+                    onChange ={this.changeEmailHandler}
                     required/>
                 <br /><br />
-                <input className= "password" type="password" placeholder="Enter your password"
-                    name="password" id="password"
-                    value={this.state.password} 
-                    onChange={this.changePasswordHandler}
+                <input className ="password" type ="password" placeholder ="Enter your password"
+                    name ="password" id ="password"
+                    value ={this.state.password} 
+                    onChange ={this.changePasswordHandler}
                     required/>
                 <br /><br />
-                <input className="submit" type="submit" value="Submit" 
-                disabled={this.state.username.length<1 || this.state.email.length<1 || this.state.password.length<1} 
-                onClick={this.saveUser} />
+                <input className ="submit" type ="submit" value ="Submit" 
+                disabled ={this.state.username.length<1 || this.state.email.length<1 || this.state.password.length<1} 
+                onClick ={this.saveUser} />
                 <br />
             </form>
         </div>
