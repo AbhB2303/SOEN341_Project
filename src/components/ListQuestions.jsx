@@ -1,28 +1,21 @@
 import React, { Component } from 'react';
 import QuestionsServices from '../Services/QuestionsServices';
 import { Link } from "react-router-dom"; 
-
-class ListQuestions extends Component 
-{
-    constructor (props)
-    {
+class ListQuestions extends Component {
+    constructor (props) {
         super(props);
-        this.state = 
-        {
+        this.state = {
             questions: []
         }
-        this.addQuestion = this.addQuestion.bind(this);
     }
-    componentDidMount()
-    {
+    componentDidMount(){
         QuestionsServices.getQuestions().then((res) => {
             this.setState({questions: res.data});
         });
     }
-    render() 
-    {
+    render() {
         return (
-            <div>
+            <div className="qNavigation">
                 <div className="h2">
                     <h2>See Other Questions!</h2>
                 </div>
@@ -33,16 +26,20 @@ class ListQuestions extends Component
                                 <th>Asked By User</th>
                                 <th>Question Title</th>
                                 <th>Question Text</th>
+                                <th>View Question</th>
                             </tr>
                         </div>
                         <div>
                             {
                                 this.state.questions.map(
                                     question => 
-                                    <tr key = {question.q_id}>
+                                    <tr key = {question.id}>
                                         <td><b>{question.username}</b></td>
                                         <td>{question.q_title}</td>
                                         <td>{question.q_text}</td>
+                                        <td>
+                                            <Link to={`/view-question/${question.id}`} className="viewQLink">View</Link>
+                                        </td>
                                     </tr>
                                 )
                             }
@@ -54,3 +51,4 @@ class ListQuestions extends Component
     }
 }
 export default ListQuestions;
+
