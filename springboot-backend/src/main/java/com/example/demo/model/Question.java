@@ -25,7 +25,10 @@ public class Question {
 		super();
 		this.q_title = q_title;
 		this.q_text = q_text;
-		this.username = username;
+		if(username.length() == 0) 
+			this.username = "anonymous";
+		else
+			this.username = username;
 	}
 	public Question () {
 	}
