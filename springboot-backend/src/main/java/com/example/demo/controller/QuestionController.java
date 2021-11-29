@@ -32,7 +32,7 @@ public class QuestionController {
 		return questionRepository.save(question);
 	}
 	// getting question by id method
-	@PostMapping("/question/{q_id}")
+	@GetMapping("/question/{q_id}")
 	public ResponseEntity<Question> getQuestionById(@PathVariable Long q_id) {
 		Question q = questionRepository.findById(q_id)
 				.orElseThrow(
