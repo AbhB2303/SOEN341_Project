@@ -1,19 +1,17 @@
 import React, { Component } from "react";
 import * as ReactBootstrap from "react-bootstrap";
 
-class Navbar extends Component
-{
-  constructor(props) 
-  {
+class Navbar extends Component {
+  constructor(props) {
     super(props);
+
     this.state = {};
   }
 
-  render() 
-  {
+  render() {
     return (
       <div className="App">
-        <ReactBootstrap.Navbar className ="color-nav" variant ="light" expand ={false}>
+        <ReactBootstrap.Navbar className="color-nav" variant="light" expand={false}>
           <ReactBootstrap.Container fluid>
             <ReactBootstrap.Navbar.Brand href="#">
               Ask Away
@@ -58,10 +56,10 @@ class Navbar extends Component
                 </ReactBootstrap.Nav>
                 <ReactBootstrap.Form className="d-flex">
                   <ReactBootstrap.FormControl
-                    type ="search"
-                    placeholder ="Search"
-                    className ="me-2"
-                    aria-label ="Search"
+                    type="search"
+                    placeholder="Search"
+                    className="me-2"
+                    aria-label="Search"
                   />
                   <ReactBootstrap.Button variant="outline-success">
                     Search
@@ -75,4 +73,5 @@ class Navbar extends Component
     );
   }
 }
+
 export default Navbar;
