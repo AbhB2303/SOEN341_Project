@@ -11,6 +11,7 @@ class ListQuestions extends Component
         {
             questions: []
         }
+        this.addQuestion = this.addQuestion.bind(this);
     }
     componentDidMount()
     {
@@ -21,7 +22,7 @@ class ListQuestions extends Component
     render() 
     {
         return (
-            <div className="qNavigation">
+            <div>
                 <div className="h2">
                     <h2>See Other Questions!</h2>
                 </div>
@@ -32,20 +33,16 @@ class ListQuestions extends Component
                                 <th>Asked By User</th>
                                 <th>Question Title</th>
                                 <th>Question Text</th>
-                                <th>View Question</th>
                             </tr>
                         </div>
                         <div>
                             {
                                 this.state.questions.map(
                                     question => 
-                                    <tr key = {question.id}>
+                                    <tr key = {question.q_id}>
                                         <td><b>{question.username}</b></td>
                                         <td>{question.q_title}</td>
                                         <td>{question.q_text}</td>
-                                        <td>
-                                            <Link to={`/view-question/${question.id}`} className="viewQLink">View</Link>
-                                        </td>
                                     </tr>
                                 )
                             }

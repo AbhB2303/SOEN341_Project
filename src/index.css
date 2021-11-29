@@ -1,362 +1,312 @@
-body 
-{
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-code 
-{
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-.header 
-{
-  text-align: left;
-  margin-left: 20px;
+.header {
+    text-align: left;
+    margin-left: 20px;
 }
 
-div.box 
-{
-  margin-top:20px;
-  background-color: rgba(206, 226, 226, 0.6);
-  border-color: black;
-  border-radius: 20px;
-  height: 390px;
-  margin-bottom:60px;
+div.box {
+    margin-top: 20px;
+    background-color: rgba(206, 226, 226, 0.6);
+    border-color: black;
+    border-radius: 20px;
+    height: 390px;
+    margin-bottom: 60px;
 }
 
-div.ansbox 
-{
-  margin-top:20px;
-  background-color: rgba(228, 231, 231, 0.6);
-  border-color: black;
-  border-radius: 40px;
-  height: 250px;
-  margin-bottom:60px;
+div.ansbox {
+    margin-top: 20px;
+    background-color: rgba(228, 231, 231, 0.6);
+    border-color: black;
+    border-radius: 40px;
+    height: 250px;
+    margin-bottom: 60px;
 }
 
-.askedQuestionBox
-{
-  margin-top: 20px;
-  background-color: rgba(228, 231, 231, 0.6);
-  height: 150px;
-  border-radius: 20px;
+.askedQuestionBox {
+    margin-top: 20px;
+    background-color: rgba(228, 231, 231, 0.6);
+    height: 150px;
+    border-radius: 20px;
 }
 
-.ans
-{
-  background-color: rgba(228, 231, 231, 0.6);
-  border-radius: 20px;
+.ans {
+    background-color: rgba(228, 231, 231, 0.6);
+    border-radius: 20px;
 }
 
-.ansBody
-{
-  font-size: 26px;
+.ansBody {
+    font-size: 26px;
 }
 
-.ansRating
-{
-  margin-bottom: 50px;
+.ansRating {
+    margin-bottom: 50px;
 }
 
-.h2 
-{
-  color: rgb(98, 94, 94);
-  text-align: center;
+.h2 {
+    color: rgb(98, 94, 94);
+    text-align: center;
 }
 
-.title 
-{
-  width: 600px;
-  height: 30px;
-  border-radius: 15px;
+.title {
+    width: 600px;
+    height: 30px;
+    border-radius: 15px;
 }
 
-.question 
-{
-  top : 0px;
-  width: 600px;
-  padding-bottom: 150px;
-  border-radius: 15px;
+.question {
+    top: 0px;
+    width: 600px;
+    padding-bottom: 150px;
+    border-radius: 15px;
 }
 
-.answer 
-{
-  top : 0px;
-  width: 800px;
-  padding-bottom: 80px;
-  border-radius: 15px;
+.answer {
+    top: 0px;
+    width: 800px;
+    padding-bottom: 80px;
+    border-radius: 15px;
 }
+
 .submit {
-  width: 80px;
-  height: 30px;
-  border-radius: 15px;
-  color: rgb(98, 94, 94);
+    width: 80px;
+    height: 30px;
+    border-radius: 15px;
+    color: rgb(98, 94, 94);
 }
 
-.reset 
-{
-  width: 80px;
-  height: 30px;
-  border-radius: 15px;
-  color: rgb(98, 94, 94);
+.reset {
+    width: 80px;
+    height: 30px;
+    border-radius: 15px;
+    color: rgb(98, 94, 94);
 }
 
-.submit:hover 
-{
-  background-color: rgb(197, 203, 201);
-  color: white;
+.submit:hover {
+    background-color: rgb(197, 203, 201);
+    color: white;
 }
 
-.reset:hover 
-{
-  background-color: rgb(197, 203, 201);
-  color: white;
+.reset:hover {
+    background-color: rgb(197, 203, 201);
+    color: white;
 }
 
-.viewQLink
-{
-  background-color: rgb(197, 203, 201);
-  color: white;
+.viewQLink {
+    background-color: rgb(197, 203, 201);
+    color: white;
 }
 
-.viewQLink:hover 
-{
-  background-color: rgb(197, 203, 201);
-  color: white;
-}
-.viewQLink : visited 
-{
-  background-color: rgb(197, 203, 201);
-  color: white;
+.viewQLink:hover {
+    background-color: rgb(197, 203, 201);
+    color: white;
 }
 
-div.form
-{
-  position: center;
-  font-size: larger;
-  border-color: black;
+.viewQLink:visited {
+    background-color: rgb(197, 203, 201);
+    color: white;
 }
 
-div.Login 
-{
-  margin-top:60px;
-  position: absolute;
-  left: 0%;
-  top: 2%;
-  padding: 20px;
-  width: 90%;
-  height: 70%;
-  background-color: rgba(206, 226, 226, 0.6);
-  border-radius: 10px;
-  text-align: center;
-  font-family:serif;
+div.form {
+    position: center;
+    font-size: larger;
+    border-color: black;
 }
 
-div.Register 
-{
-  margin-top:60px;
-  position: absolute;
-  left: 0%;
-  top: 2%;
-  padding: 20px;
-  width: 90%;
-  height: 70%;
-  background-color: rgba(206, 226, 226, 0.6);
-  border-radius: 10px;
-  text-align: center;
-  font-family:serif;
-}
-
-div.h3 
-{
-  position: absolute;
-  height: 10%;
-  width: 90%;
-}
-
-div.LoginForm 
-{
-  position: absolute;
-  top: 30%;
-  height: 40%;
-  width: 90%;
-  font-size: larger;
-}
-
-div.RegisterForm
-{
-  position: absolute;
-  top: 30%;
-  height: 60%;
-  width: 90%;
-  font-size: larger;
-}
-
-.username 
-{
-  top : 0px;
-  margin-top: 50px;
-  width: 220px;
-  height: 40px;
-  border-radius: 15px;
-}
-
-.email 
-{
-  margin-top: 50px;
-  top : 0px;
-  width: 220px;
-  height: 40px;
-  border-radius: 15px;
-}
-
-.emailr 
-{
-  top : 0px;
-  width : 220px;
-  height : 40px;
-  border-radius : 15px;
-}
-
-.password 
-{
-  top : 0px;
-  width: 220px;
-  height: 40px;
-  border-radius: 15px;
-}
-
-a:link
-{
-  color:rgb(49, 53, 54);
-  text-decoration: none;
-}
-
-a:hover 
-{
-  color: rgb(132, 124, 124);
-  text-decoration: none;
-  padding: 4px 10px;
-  border-radius: 5px;
-}
-
-th
-{
-  background-color: rgb(238, 245, 243);
-  position:relative;
-  width:700px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  text-decoration-style: double;
-}
-
-td 
-{
-  position:relative;
-  width: 700px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-tr:hover 
-{
-  background-color: rgb(183, 193, 189);
-}
-
-tr:nth-child(even) 
-{
-  background-color: rgb(238, 245, 243);
-}
-
-tr:nth-child(even):hover 
-{
-  background-color: rgb(183, 193, 189);
-}
-
-.qNavigation 
-{
-  margin-bottom: 60px;
-}
-
-.Footer 
-{
-  margin-top: 100px;
-  position:fixed;
-  bottom: 0;
-  width:100%;
-  height: 30px;
-  background-color: rgb(199, 206, 200);
-  color: black;
-  text-align: center;
-}
-
-@media only screen and (min-width: 600px)
-{
-  div.LoginForm 
-  {
-      margin-top: 200px;
-      height: 60%;
-  }
-  div.Login 
-  {
-      width: 500px;
-      height: 500px;
-  }
-  div.RegisterForm 
-  {
-      margin-top: 200px;
-      height: 60%;
-  }
-  div.Register 
-  {
-      width: 500px;
-      height: 500px;
-  }
-}
-
-@media only screen and (min-width: 500px) 
-{
-  div.Login 
-  {
-      position: absolute;
-      left: 3%;
-      top: 15%;
-      width: 475px;
-      height: 300px;
-      border-radius: 10px;
-      text-align: center;
-  }
-  div.LoginForm 
-  {
-      position: absolute;
-      top: 25%;
-      height: 70%;
-      width: 90%;
-      font-size: larger;
-  }
-  div.Register 
-  {
+div.Login {
+    margin-top: 60px;
     position: absolute;
-    left: 3%;
-    top: 15%;
-    width: 475px;
-    height: 300px;
+    left: 0%;
+    top: 2%;
+    padding: 20px;
+    width: 90%;
+    height: 70%;
+    background-color: rgba(206, 226, 226, 0.6);
     border-radius: 10px;
     text-align: center;
-  }
-  div.RegisterForm 
-  {
-    position: absolute;
-    top: 25%;
-    height: 70%;
-    width: 90%;
-    font-size: larger;
-  }
+    font-family: serif;
 }
 
+div.Register {
+    margin-top: 60px;
+    position: absolute;
+    left: 0%;
+    top: 2%;
+    padding: 20px;
+    width: 90%;
+    height: 70%;
+    background-color: rgba(206, 226, 226, 0.6);
+    border-radius: 10px;
+    text-align: center;
+    font-family: serif;
+}
+
+div.h3 {
+    position: absolute;
+    height: 30%;
+    width: 90%;
+}
+
+div.LoginForm {
+    position: absolute;
+    top: 30%;
+    height: 40%;
+    width: 90%;
+    font-size: larger;
+}
+
+div.RegisterForm {
+    position: absolute;
+    top: 30%;
+    height: 60%;
+    width: 90%;
+    font-size: larger;
+}
+
+.username {
+    top: 0px;
+    margin-top: 50px;
+    width: 200px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+.email {
+    margin-top: 50px;
+    top: 0px;
+    width: 200px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+.emailr {
+    top: 0px;
+    width: 220px;
+    height: 40px;
+    border-radius: 15px;
+}
+
+.password {
+    top: 0px;
+    width: 200px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+a:link {
+    color: rgb(49, 53, 54);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(132, 124, 124);
+    text-decoration: none;
+    padding: 4px 10px;
+    border-radius: 5px;
+}
+
+th {
+    background-color: rgb(238, 245, 243);
+    position: relative;
+    width: 700px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration-style: double;
+}
+
+td {
+    position: relative;
+    width: 700px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+tr:hover {
+    background-color: rgb(183, 193, 189);
+}
+
+tr:nth-child(even) {
+    background-color: rgb(238, 245, 243);
+}
+
+tr:nth-child(even):hover {
+    background-color: rgb(183, 193, 189);
+}
+
+.qNavigation {
+    margin-bottom: 60px;
+}
+
+.Footer {
+    margin-top: 100px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(199, 206, 200);
+    color: black;
+    text-align: center;
+}
+
+@media only screen and (min-width: 600px) {
+    div.LoginForm {
+        margin-top: 200px;
+        height: 60%;
+    }
+    div.Login {
+        width: 500px;
+        height: 500px;
+    }
+    div.RegisterForm {
+        margin-top: 200px;
+        height: 60%;
+    }
+    div.Register {
+        width: 500px;
+        height: 500px;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    div.Login {
+        position: absolute;
+        left: 3%;
+        top: 15%;
+        width: 475px;
+        height: 300px;
+        border-radius: 10px;
+        text-align: center;
+    }
+    div.LoginForm {
+        position: absolute;
+        top: 25%;
+        height: 70%;
+        width: 90%;
+        font-size: larger;
+    }
+    div.Register {
+        position: absolute;
+        left: 3%;
+        top: 15%;
+        width: 475px;
+        height: 300px;
+        border-radius: 10px;
+        text-align: center;
+    }
+    div.RegisterForm {
+        position: absolute;
+        top: 25%;
+        height: 70%;
+        width: 90%;
+        font-size: larger;
+    }
+}
