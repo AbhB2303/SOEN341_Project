@@ -2,7 +2,8 @@
     "name": "soen341_project",
     "version": "0.1.0",
     "private": true,
-    "dependencies": {
+    "dependencies": 
+    {
         "@testing-library/jest-dom": "^5.14.1",
         "@testing-library/react": "^11.2.7",
         "@testing-library/user-event": "^12.8.3",
@@ -16,25 +17,31 @@
         "react-scripts": "4.0.3",
         "web-vitals": "^1.1.2"
     },
-    "scripts": {
+    "scripts": 
+    {
         "start": "SET PORT=4200 && react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject"
     },
-    "eslintConfig": {
-        "extends": [
+    "eslintConfig": 
+    {
+        "extends": 
+        [
             "react-app",
             "react-app/jest"
         ]
     },
-    "browserslist": {
-        "production": [
+    "browserslist": 
+    {
+        "production": 
+        [
             ">0.2%",
             "not dead",
             "not op_mini all"
         ],
-        "development": [
+        "development": 
+        [
             "last 1 chrome version",
             "last 1 firefox version",
             "last 1 safari version"

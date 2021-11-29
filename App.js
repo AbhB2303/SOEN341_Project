@@ -3,8 +3,11 @@ import React from 'react';
 import './App.css';
 import Footer from '.footer'
 import AskQuestionForm from './components/AskQuestionForm'
-class App extends Component {
-  render() {
+
+class App extends Component 
+{
+  render() 
+  {
     return (
       <div className="App">
         <AskQuestionForm></AskQuestionForm>

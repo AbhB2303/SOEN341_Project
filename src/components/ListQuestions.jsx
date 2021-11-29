@@ -1,26 +1,26 @@
 import React, { Component } from 'react';
-import QuestionsServices from '../Services/QuestionsServices'
-class ListQuestions extends Component {
-    constructor (props) {
+import QuestionsServices from '../Services/QuestionsServices';
+import { Link } from "react-router-dom"; 
+
+class ListQuestions extends Component 
+{
+    constructor (props)
+    {
         super(props);
-        this.state = {
+        this.state = 
+        {
             questions: []
         }
         this.addQuestion = this.addQuestion.bind(this);
     }
-    componentDidMount(){
+    componentDidMount()
+    {
         QuestionsServices.getQuestions().then((res) => {
             this.setState({questions: res.data});
         });
     }
-    addQuestion(){
-        QuestionsServices.getQuestions().then(
-            (res) => {
-                this.setState({Questions: res.data});
-            }
-        );
-    }
-    render() {
+    render() 
+    {
         return (
             <div>
                 <div className="h2">
@@ -54,4 +54,3 @@ class ListQuestions extends Component {
     }
 }
 export default ListQuestions;
-
