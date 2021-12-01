@@ -32,6 +32,7 @@ class Login extends Component {
                 window.location.reload();
             } else {
                 localStorage.setItem("username", res.data);
+                alert("Log in succesful!");
                 this.props.history.push('/');
             }
         
