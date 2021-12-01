@@ -23,16 +23,23 @@ class Register extends Component {
         this.setState({password: event.target.value});
     }
     saveUser = (u) => {
-        alert('User registered successfully!');
-        u.preventDefault();
         let user = {
             username: this.state.username,
             email: this.state.email,
             password: this.state.password,
         }
-        console.log('user => ' + JSON.stringify(user));
-        UsersServices.createUser(user);
-        window.location.reload();
+        UsersServices.registerUser(user).then((res) => {
+            if(res.data==="fail"){
+                alert("User already exist, log in please!");
+                this.props.history.push("/login");
+            } else {
+                alert("User registered successfully!");
+                UsersServices.createUser(user);
+                localStorage.setItem("username", res.data);
+                let a = localStorage.getItem("username");
+                this.props.history.push(`/profile/${a}`);
+            }
+        });
     }
     render() {
         return (
