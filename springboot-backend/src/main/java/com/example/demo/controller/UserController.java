@@ -19,7 +19,7 @@ import org.springframework.web.servlet.ModelAndView;
 import com.example.demo.model.User;
 import com.example.demo.repository.UserRepository;
 
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
 @RequestMapping("/api/v1/")
 public class UserController {
@@ -50,4 +50,15 @@ public class UserController {
 		}
 	}
 	
+	@PostMapping("/register")
+        public String register(@RequestBody Map<String, String> json ) {
+		String username = json.get("username");
+		String password = json.get("password");
+		User u = userRepository.findByUsernameAndPassword(username, password);
+		if (u == null) {
+			return username;		
+		} else {
+			return "fail";
+		}
+	}
 }

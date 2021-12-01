@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import UsersServices from '../Services/UsersServices';
 class Login extends Component {
     constructor(props) {
-        super(props);
-               
+        super(props);  
         this.state = {
             username: '',
             password: ''
@@ -13,14 +12,12 @@ class Login extends Component {
         this.changeUserHandler = this.changeUserHandler.bind(this);
         this.changePasswordHandler = this.changePasswordHandler.bind(this);
     }
-
     changeUserHandler=(event) => {
         this.setState({username: event.target.value});
     }
     changePasswordHandler=(event) => {
         this.setState({password: event.target.value});
     }
-
     logInTheUser=() => {
         let user = {
             username: this.state.username,
@@ -35,35 +32,23 @@ class Login extends Component {
                 alert("Log in succesful!");
                 this.props.history.push('/');
             }
-        
         });
-
     }
-    
     logOutTheUser =() => {
         localStorage.setItem("username", "");
         alert("You have been logged out!");
         this.props.history.push('/');
     }
-
     render() {
         let a = localStorage.getItem("username");
         if(a){
-            return(
-                <div className="Login"> You are already logged in. 
-                <div> <input className="submit" type="submit" value="Log Out" onClick={this.logOutTheUser} /> </div>
-                </div>
-            )
+            this.props.history.push(`/profile/${a}`);
         }
         return (
-
-            
-            
             <div className="Login">
             <div className="h3">
                 <h3>Login to Continue!</h3>
             </div>
-            
             <form className="LoginForm">
                 <input className= "username" placeholder="Enter your username" value={this.state.username} onChange={this.changeUserHandler}
                     name="username" id="username" required></input>

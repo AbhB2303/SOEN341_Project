@@ -4,11 +4,19 @@ import * as ReactBootstrap from "react-bootstrap";
 class Navbar extends Component {
   constructor(props) {
     super(props);
-
     this.state = {};
   }
-
+  logOutTheUser =() => {
+    localStorage.setItem("username", "");
+    alert("You have been logged out!");
+    window.location.reload();
+    this.props.history.push('/');
+  }
   render() {
+    let a = localStorage.getItem("username");
+    let loginElement = a ? 'Logout' : 'Login';
+    let registerElement = a ? '' : 'Register';
+    let profileElement = a ? 'profile' : '';
     return (
       <div className="App">
         <ReactBootstrap.Navbar className="color-nav" variant="light" expand={false}>
@@ -32,20 +40,23 @@ class Navbar extends Component {
                   <ReactBootstrap.Nav.Link href="/">
                     Home
                   </ReactBootstrap.Nav.Link>
-                  <ReactBootstrap.Nav.Link href="/login">
-                    Login
+                  <ReactBootstrap.Nav.Link href="/profile/:a">
+                   {profileElement}
                   </ReactBootstrap.Nav.Link>
                   <ReactBootstrap.Nav.Link href="/register">
-                    Register
+                   {registerElement}
+                  </ReactBootstrap.Nav.Link>
+                  <ReactBootstrap.Nav.Link href="/login">
+                   {loginElement}
                   </ReactBootstrap.Nav.Link>
                   <ReactBootstrap.NavDropdown
                     title="Dropdown"
                     id="offcanvasNavbarDropdown"
                   >
-                    <ReactBootstrap.NavDropdown.Item href="#action3">
+                    <ReactBootstrap.NavDropdown.Item href="/aboutus">
                       About Us
                     </ReactBootstrap.NavDropdown.Item>
-                    <ReactBootstrap.NavDropdown.Item href="#action4">
+                    <ReactBootstrap.NavDropdown.Item href="/contactus">
                       Contact Us
                     </ReactBootstrap.NavDropdown.Item>
                     <ReactBootstrap.NavDropdown.Divider />
