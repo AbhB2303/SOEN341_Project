@@ -19,7 +19,7 @@ import org.springframework.web.servlet.ModelAndView;
 import com.example.demo.model.User;
 import com.example.demo.repository.UserRepository;
 
-@CrossOrigin(origins = {"http://localhost:4200", "https://reqbin.com"})
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("/api/v1/")
 public class UserController {
