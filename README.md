@@ -1,8 +1,7 @@
 # SOEN341 Project
 
 ## Objective:
-To create a website forum platform that is similar to Stack Overflow where users can 
-ask questions, answer them and vote on the best answer.
+To create a website forum platform that is similar to Stack Overflow where users can ask questions, answer them and vote on the best answer.
 
 ## Description:
 This project will be an online forum where users can submit questions to be viewed, voted on
