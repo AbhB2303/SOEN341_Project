@@ -7,6 +7,9 @@ import ViewQuestion from './components/ViewQuestion'
 import Index from './components/Index'
 import Footer from './components/Footer'
 import NavBar from './components/Navbar'
+import AboutUs from './components/AboutUs'
+import ContactUs from './components/ContactUs'
+
 class App extends Component {
   render() {
     return (
@@ -19,6 +22,8 @@ class App extends Component {
               <Route path="/login" component={Login}></Route>
               <Route path="/register" component={Register}></Route>
               <Route path="/view-question/:id" component={ViewQuestion}></Route>
+              <Route path= "/aboutus" component={AboutUs}></Route>
+              <Route path= "/contactus" component={ContactUs}></Route>
             </Switch>
           </div>
           <Footer></Footer>

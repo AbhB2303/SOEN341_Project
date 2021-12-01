@@ -39,7 +39,7 @@ public class UserController {
 	}
 
 	@PostMapping("/login")
-        public String login(@RequestBody Map<String, String> json ) {
+    public String login(@RequestBody Map<String, String> json ) {
 		String username = json.get("username");
 		String password = json.get("password");
 		User u = userRepository.findByUsernameAndPassword(username, password);
