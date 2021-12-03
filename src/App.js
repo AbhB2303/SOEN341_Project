@@ -7,8 +7,11 @@ import ViewQuestion from './Components/ViewQuestion'
 import Index from './Components/Index'
 import Footer from './Components/Footer'
 import NavBar from './Components/NavBar'
-class App extends Component {
-  render() {
+
+class App extends Component 
+{
+  render() 
+  {
     return (
       <div>
         <Router>
