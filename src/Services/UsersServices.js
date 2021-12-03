@@ -9,12 +9,14 @@ class UsersServices
     {
         return axios.post(USERS_API_BASE_URL, u);
     }
-    loginUser(u) {
+    loginUser(u) 
+    {
         return axios.post(USERS_API_BASE_URL_LOGIN, u).then(response => {
             return response
           }).catch(error => console.log(error));
     }
-    registerUser(u) {
+    registerUser(u) 
+    {
         return axios.post(USERS_API_BASE_URL_REGISTER, u).then(response => {
             return response
           }).catch(error => console.log(error));
