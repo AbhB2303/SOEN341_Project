@@ -1,47 +1,62 @@
 import React, { Component } from 'react';
 import UsersServices from '../Services/UsersServices';
-class Login extends Component {
-    constructor(props) {
+
+class Login extends Component
+{
+    constructor(props) 
+    {
         super(props);  
         this.state = {
             username: '',
             password: ''
         }
+        
         this.logInTheUser = this.logInTheUser.bind(this);
         this.logOutTheUser = this.logOutTheUser.bind(this);
         this.changeUserHandler = this.changeUserHandler.bind(this);
         this.changePasswordHandler = this.changePasswordHandler.bind(this);
     }
+    
     changeUserHandler=(event) => {
         this.setState({username: event.target.value});
     }
+    
     changePasswordHandler=(event) => {
         this.setState({password: event.target.value});
     }
+    
     logInTheUser=() => {
         let user = {
             username: this.state.username,
             password: this.state.password,
         }
+        
         UsersServices.loginUser(user).then((res) => {
-            if(res.data==="fail"){
+            if(res.data==="fail")
+            {
                 alert("Wrong username or password");
                 window.location.reload();
-            } else {
+            }
+            else
+            {
                 localStorage.setItem("username", res.data);
                 alert("Log in succesful!");
                 this.props.history.push('/');
             }
         });
     }
+    
     logOutTheUser =() => {
         localStorage.setItem("username", "");
         alert("You have been logged out!");
         this.props.history.push('/');
     }
-    render() {
+    
+    render() 
+    {
         let a = localStorage.getItem("username");
-        if(a){
+        if(a)
+        {
             this.props.history.push(`/profile/${a}`);
         }
         return (
