@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import QuestionsServices from '../Services/QuestionsServices';
-class AskQuestionForm extends Component {
-    constructor(props) {
+
+class AskQuestionForm extends Component 
+{
+    constructor(props) 
+    {
         super(props)
         this.state = {
             q_title: '',
@@ -12,16 +15,22 @@ class AskQuestionForm extends Component {
         this.changeTextHandler = this.changeTextHandler.bind(this);
         this.saveQuestion = this.saveQuestion.bind(this);
     }
+    
     changeTitleHandler = (event) => {
         this.setState({ q_title: event.target.value });
     }
+    
     changeTextHandler = (event) => {
         this.setState({ q_text: event.target.value });
     }
+    
     saveQuestion = (q) => {
-        if (localStorage.getItem("username") === "") {
+        if (localStorage.getItem("username") === "") 
+        {
             alert('Please login to post your question!');
-        } else {
+        } 
+        else 
+        {
             alert('Your question was posted successfully!');
             q.preventDefault();
             let question = {
@@ -34,10 +43,14 @@ class AskQuestionForm extends Component {
         }
         window.location.reload();
     }
-    cancellationAlert() {
+    
+    cancellationAlert()
+    {
         window.location.reload();
     }
-    render() {
+    
+    render()
+    {
         let a = localStorage.getItem("username");
         return (
             <div className="box">
