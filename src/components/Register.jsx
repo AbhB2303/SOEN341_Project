@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import UsersServices from '../Services/UsersServices';
-class Register extends Component {
-    constructor(props) {
+
+class Register extends Component 
+{
+    constructor(props) 
+    {
         super(props)
         this.state = {
             username: '',
@@ -13,26 +16,33 @@ class Register extends Component {
         this.changePasswordHandler = this.changePasswordHandler.bind(this);
         this.saveUser = this.saveUser.bind(this);
     }
-    changeUsernameHandler=(event) => {
+    
+    changeUsernameHandler = (event) => {
         this.setState({username: event.target.value});
     }
-    changeEmailHandler=(event) => {
+    changeEmailHandler = (event) => {
         this.setState({email: event.target.value});
     }
-    changePasswordHandler=(event) => {
+    
+    changePasswordHandler = (event) => {
         this.setState({password: event.target.value});
     }
+    
     saveUser = (u) => {
         let user = {
             username: this.state.username,
             email: this.state.email,
             password: this.state.password,
         }
+        
         UsersServices.registerUser(user).then((res) => {
-            if(res.data==="fail"){
+            if(res.data==="fail")
+            {
                 alert("User already exist, log in please!");
                 this.props.history.push("/login");
-            } else {
+            } 
+            else 
+            {
                 alert("User registered successfully!");
                 UsersServices.createUser(user);
                 localStorage.setItem("username", res.data);
@@ -41,7 +51,9 @@ class Register extends Component {
             }
         });
     }
-    render() {
+    
+    render() 
+    {
         return (
             <div className="Register">
             <div className="h3">
