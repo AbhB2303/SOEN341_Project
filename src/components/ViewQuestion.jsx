@@ -2,8 +2,11 @@ import React, { Component } from 'react';
 import QuestionsServices from '../Services/QuestionsServices';
 import AnswersServices from '../Services/AnswersServices';
 import { Platform, StyleSheet, View, Text } from 'react';
-class ViewQuestion extends Component {
-    constructor(props) {
+
+class ViewQuestion extends Component 
+{
+    constructor(props) 
+    {
         super(props)
         this.state = {
             id: this.props.match.params.id,
@@ -15,19 +18,24 @@ class ViewQuestion extends Component {
         this.changeBodyHandler = this.changeBodyHandler.bind(this);
         this.saveAnswer = this.saveAnswer.bind(this);
     }
-    componentDidMount() {
+    
+    componentDidMount() 
+    {
         QuestionsServices.getQuestionById(this.state.id).then(
             (res) => {
                 this.setState({ question: res.data });
             });
+        
         AnswersServices.getAnswers().then(
             (res) => {
                 this.setState({ answers: res.data });
             });
     }
+    
     changeBodyHandler = (event) => {
         this.setState({ body: event.target.value });
     }
+    
     saveAnswer = (a) => {
         alert('Your answer was posted successfully!');
         a.preventDefault();
@@ -39,10 +47,14 @@ class ViewQuestion extends Component {
         AnswersServices.createAnswer(ans);
         window.location.reload();
     }
-    cancellationAlert() {
+    
+    cancellationAlert() 
+    {
         window.location.reload();
     }
-    render() {
+    
+    render()
+    {
         return (
             <div>
                 <div className="askedQuestionBox">
