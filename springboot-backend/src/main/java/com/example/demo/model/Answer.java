@@ -1,5 +1,4 @@
 package com.example.demo.model;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -9,12 +8,10 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="answers")
-public class Answer {
-
+public class Answer 
+{
 	//Default constructor
-	public Answer() {
-		
-	}
+	public Answer() {}
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -36,61 +33,74 @@ public class Answer {
 	private long rating; //Stores the rating of the answer
 	
 	//Constructor with parameters
-	public Answer(long questionID, String username, String body, boolean isBestAnswer, long rating) {
+	public Answer(long questionID, String username, String body, boolean isBestAnswer, long rating) 
+	{
 		super();
-		this.questionID = questionID;
-		this.username = username;
-		this.body = body;
-		this.isBestAnswer = isBestAnswer;
-		this.rating = rating;
+		this.questionID = 	questionID;
+		this.username =		username;
+		this.body = 		body;
+		this.isBestAnswer = 	isBestAnswer;
+		this.rating = 		rating;
 	}
 	
 	//Getters and setters	
-	public long getReplyID() {
+	public long getReplyID() 
+	{
 		return replyID;
 	}
 
-	public void setReplyID(long replyID) {
+	public void setReplyID(long replyID) 
+	{
 		this.replyID = replyID;
 	}
 
-	public long getQuestionID() {
+	public long getQuestionID() 
+	{
 		return questionID;
 	}
 
-	public void setQuestionID(long questionID) {
+	public void setQuestionID(long questionID) 
+	{
 		this.questionID = questionID;
 	}
 
-	public String getUsername() {
+	public String getUsername() 
+	{
 		return username;
 	}
 
-	public void setUsername(String username) {
+	public void setUsername(String username) 
+	{
 		this.username = username;
 	}
 
-	public String getBody() {
+	public String getBody() 
+	{
 		return body;
 	}
 
-	public void setBody(String body) {
+	public void setBody(String body) 
+	{
 		this.body = body;
 	}
 
-	public boolean isBestAnswer() {
+	public boolean isBestAnswer() 
+	{
 		return isBestAnswer;
 	}
 
-	public void setBestAnswer(boolean isBestAnswer) {
+	public void setBestAnswer(boolean isBestAnswer) 
+	{
 		this.isBestAnswer = isBestAnswer;
 	}
 
-	public long getRating() {
+	public long getRating() 
+	{
 		return rating;
 	}
 
-	public void setRating(long rating) {
+	public void setRating(long rating) 
+	{
 		this.rating = rating;
 	}	
 }
