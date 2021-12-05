@@ -1,24 +1,32 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import QuestionsServices from '../Services/QuestionsServices';
-class profile extends Component {
-    constructor (props) {
+
+class profile extends Component 
+{
+    constructor (props) 
+    {
         super(props);
         this.state = {
             questions: []
         }
     }
-    componentDidMount(){
+    
+    componentDidMount()
+    {
         QuestionsServices.getQuestions().then((res) => {
             this.setState({questions: res.data});
         });
     }
+    
     logOutTheUser = () => {
         localStorage.setItem("username", "");
         alert("You have been logged out!");
         this.props.history.push('/');
     }
-    render() {
+    
+    render()
+    {
         let a = localStorage.getItem("username");
         return (
             <div>
@@ -64,5 +72,4 @@ class profile extends Component {
         );
     }
 }
-
 export default profile;
