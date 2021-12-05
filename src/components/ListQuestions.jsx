@@ -1,19 +1,26 @@
 import React, { Component } from 'react';
 import QuestionsServices from '../Services/QuestionsServices';
 import { Link } from "react-router-dom"; 
-class ListQuestions extends Component {
-    constructor (props) {
+
+class ListQuestions extends Component 
+{
+    constructor (props) 
+    {
         super(props);
         this.state = {
             questions: []
         }
     }
-    componentDidMount(){
+    
+    componentDidMount()
+    {
         QuestionsServices.getQuestions().then((res) => {
             this.setState({questions: res.data});
         });
     }
-    render() {
+    
+    render() 
+    {
         return (
             <div className="qNavigation">
                 <div className="h2">
