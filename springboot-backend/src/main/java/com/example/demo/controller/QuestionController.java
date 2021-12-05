@@ -1,7 +1,5 @@
 package com.example.demo.controller;
-
 import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -11,34 +9,38 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
 import com.example.demo.exception.ResourceNotFoundException;
 import com.example.demo.model.Question;
 import com.example.demo.repository.QuestionRepository;
+
 @CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("/api/v1/")
-public class QuestionController {
+public class QuestionController 
+{
 	@Autowired
 	private QuestionRepository questionRepository;
+	
 	// getting all questions
 	@GetMapping("/question")
-	public List<Question> getAllQuestions (){
+	public List<Question> getAllQuestions ()
+	{
 		return questionRepository.findAll();
 	}
+	
 	// creating questions method
 	@PostMapping("/question")
-	public Question createQuestion(@RequestBody Question question) {
+	public Question createQuestion(@RequestBody Question question)
+	{
 		return questionRepository.save(question);
 	}
+	
 	// getting question by id method
 	@GetMapping("/question/{q_id}")
-	public ResponseEntity<Question> getQuestionById(@PathVariable Long q_id) {
+	public ResponseEntity<Question> getQuestionById(@PathVariable Long q_id) 
+	{
 		Question q = questionRepository.findById(q_id)
-				.orElseThrow(
-						() -> new ResourceNotFoundException("Not Found"));
+				.orElseThrow(() -> new ResourceNotFoundException("Not Found"));
 		return ResponseEntity.ok(q);
-	}
-	
-	
+	}	
 }
