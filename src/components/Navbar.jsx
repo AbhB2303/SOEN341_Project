@@ -1,18 +1,23 @@
 import React, { Component } from "react";
 import * as ReactBootstrap from "react-bootstrap";
 
-class Navbar extends Component {
-  constructor(props) {
+class Navbar extends Component
+{
+  constructor(props) 
+  {
     super(props);
     this.state = {};
   }
+  
   logOutTheUser =() => {
     localStorage.setItem("username", "");
     alert("You have been logged out!");
     window.location.reload();
     this.props.history.push('/');
   }
-  render() {
+  
+  render() 
+  {
     let a = localStorage.getItem("username");
     let loginElement = a ? 'Logout' : 'Login';
     let registerElement = a ? '' : 'Register';
@@ -84,5 +89,4 @@ class Navbar extends Component {
     );
   }
 }
-
 export default Navbar;
