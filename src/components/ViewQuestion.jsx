@@ -17,6 +17,7 @@ class ViewQuestion extends Component
         }
         this.changeBodyHandler = this.changeBodyHandler.bind(this);
         this.saveAnswer = this.saveAnswer.bind(this);
+        this.setBest = this.setBest.bind(this);
     }
     
     componentDidMount() 
@@ -47,6 +48,15 @@ class ViewQuestion extends Component
         AnswersServices.createAnswer(ans);
         window.location.reload();
     }
+
+    setBest =(a) => {
+        let q_and_a = {
+            qid: this.state.question.id,
+            rid: a
+        }
+        QuestionsServices.setBestAnswer(q_and_a);
+        window.location.reload();
+    }
     
     cancellationAlert() 
     {
@@ -55,6 +65,7 @@ class ViewQuestion extends Component
     
     render()
     {
+        let a = localStorage.getItem("username");
         return (
             <div>
                 <div className="askedQuestionBox">
@@ -67,6 +78,9 @@ class ViewQuestion extends Component
                         </div>
                         <div>
                             <h4 style={{ marginLeft: "60px" }}> {this.state.question.q_text} </h4>
+                        </div>
+                        <div>
+                            <h6 style={{ marginLeft: "60px" }}> Asked by: {this.state.question.username} </h6>
                         </div>
                     </div>
                 </div>
@@ -85,8 +99,9 @@ class ViewQuestion extends Component
                                     answer => 
                                     <div>
                                         <div className="ans" key = {answer.replyID}>
-                                            <div style={{ marginLeft: "60px" }} className="ansBody">{answer.body}</div>
+                                            <div style={{ marginLeft: "60px", backgroundColor: answer.bestAnswer===false ? "" : "lightgreen"}}  className="ansBody">{answer.body}</div>
                                             <div style={{ marginLeft: "60px" }} className="ansRating"> rating: {answer.rating}</div>
+                                            {a===this.state.question.username ? <div><input type="submit" style={{ marginLeft: "60px" }} onClick={() => this.setBest(answer.replyID)} value="Choose as best"></input></div> : ""}
                                         </div>
                                     </div>
                                     ) 
