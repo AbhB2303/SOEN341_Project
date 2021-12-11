@@ -129,3 +129,13 @@ Sprint 4: (8 Stories, 49 Points)
 ![Block Diagram](https://github.com/AbhB2303/SOEN341_Project/blob/main/blockdiagram.png)
 
 ## Infrastructure
+
+
+
+
+Framework
+
+
+For this project, the React framework was used, which utilises JavaScript. This framework was selected because it is a free and open source. Also, it was used to minimize risk since there were members of the team that were already familiar with this framework and had experience with JavaScript and Java. It was also selected because it is well documented and there are many tutorials and troubleshooting tips that are easily accessible online for any errors the team might have encountered. It is also a framework that is considered easy to adopt, that has multiple developer tools, and that can be compatible on many platforms. 
+
+For the framework, there were many alternatives available. One of which was the .NET framework. One of the reasons this was not selected was to minimize the risk. There were no team members that were familiar with this framework, so the risk was substantial. Another reason was that the trial period for students was not long enough, so it would not be free. There were also less tutorials and less troubleshooting tips available overall, compared to the selected framework. Other options for frameworks included Spring, Ruby, and Angular. These were rejected mainly because of the lack of experience with them within the team. 
